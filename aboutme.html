@@ -1,92 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <title>MATHILDE KERR - NUTRITIONIST</title>
+    <link href="css/aboutme.css" rel="stylesheet">
+</head>
+
 <body>
-  <main class="bd-masthead" id="content" role="main">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-6 mx-auto col-md-6 order-md-2">
-          {% include icons/bootstrap-stack.svg width="512" height="430" class="img-fluid mb-3 mb-md-0" %}
-        </div>
-        <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
-          <h1 class="mb-3 bd-text-purple-bright">Bootstrap</h1>
-          <p class="lead">
-            Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.
-          </p>
-          <p class="lead mb-4">
-            Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
-          </p>
-          <div class="row mx-n2">
-            <div class="col-md px-2">
-              <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/introduction/" class="btn btn-lg btn-bd-primary w-100 mb-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">Get started</a>
-            </div>
-            <div class="col-md px-2">
-              <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/download/" class="btn btn-lg btn-outline-secondary w-100 mb-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}');">Download</a>
-            </div>
-          </div>
-          <p class="text-muted mb-0">
-            Currently v{{ site.current_version }}
-          </p>
-        </div>
-      </div>
-      {% include ads.html %}
-    </div>
-  </main>
 
-  <div class="masthead-followup row m-0 border border-white">
-    <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
-      <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
-      {% include icons/import.svg width="32" height="32" class="text-primary mb-2" %}
-      <h3>Installation</h3>
-      <p>Include Bootstrap’s source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don’t include documentation, but do include our build system and readme.</p>
+  <h1>About Me</h1>
+  <div>
+    <p> Hello! My name is Mathilde and I am a Registered Nutritionist on the UK Voluntary Register of Nutritionists with the Association for Nutrition (AfN).<br> Food is an essential part of life, should be enjoyed and should not be something to feel guilty or stressed about. I will never recommend faddy diets, pills, shakes or anything without an evidence base. <br> If you would like to find out more about me/what I offer, please do not hesitate to get in touch via my contact page.</p>
+  </div>
+    <div>
+    <h2>My background</h2>
+    <p> I have been working in public health, specifically weight management and healthy lifestyle, for over 6 years. I mostly have experience working with the early years including postnatal mothers. I am passionate about educating people on nutrition and helping them to improve their health through diet (as well as physical activity), whilst also considering their individual lifestyle. There is no 'one size fits all' approach and I like to get to know clients to understand how best I can help them. </p>
+    <h2>What is the AfN?</h2>
+    <p> The AfN is a registered charity and is an independent regulator for Registered Nutritionists in the UK. It serves to protect and benefit the public, by ensuring that all registrants are competent, qualified nutrition professionals who meet their rigorously applied standards for scientifically sound evidence-based nutrition and its use in practice.  The UK Voluntary Register of Nutritionists is the only register of qualified nutritionists </p>
+    <h2>Services and Prices</h2>
+    <ol>
+      <li>1:1 appointments</li>
+      <p> I can support with child and adult general healthy eating/nutrition education, weight management, food diary analysis, meal planning and health related behaviour change. </p>
+      <b> Initial consultation</b> <p>The initial consultation is an opportunity for me to meet you, find out a bit more about yourself and what you would like to get out of the service, and for you to ask any questions you may have. There are 15 minutes built in to the end of the consultation if you wish to go ahead and book appointment(s), as you will also need to complete a short consent form.</p>
+      <li>Early years group workshops</li>
+      <br>
+        <ul>Weaning</ul>
+        <ul>General toddler healthy eating</ul>
+        <ul>Healthy packed lunches</ul>
+        <ul>Fussy eating </ul>
+        <ul>Limiting Sugar Intake </ul>
 
-  {% highlight sh %}
-  npm install bootstrap
-  {% endhighlight %}
+        <p> These are available for groups of 4 or more. Available as theory only (1 hour) or theory + practical (1.5 hours).</p>
 
-  {% highlight sh %}
-  gem install bootstrap -v {{ site.current_ruby_version }}
-  {% endhighlight %}
+    </ol>
+    <h3>Disclaimer</h3>
+    <p> I will <b><u>not</b></u> see clients with a particular clinical condition or disease. This is outside of my realm of expertise/training and would breach the <a href="http://www.associationfornutrition.org/Portals/0/Public/Registration/AfN%20Standards%20Ethics%20Conduct%20Performance.pdf">AfN Standards of Ethics, Conduct and Performance</a> In this situation, you will need to either obtain a GP referral to see a Registered Dietician on the NHS, or seek a private freelance Registered Dietician. This can be found via the <a href= "https://freelancedietitians.org/"> British Dietetic Association</a> </p>
 
-      <hr class="half-rule">
-      <a class="btn btn-outline-primary" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/download/">Read installation docs</a>
-    </div>
+    <h3>Contact</h3>
+    <p> Mathilde Kerr (RNutr) <br> 07847 449 210 <br> Mathilde_kerr@hotmail.com <br> <a href="https://www.linkedin.com/in/mathilde-kerr-bsc-hons-rnutr-4398ba5a/?originalSubdomain=uk"> Linkedin </a> </p>
 
-    <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
-      <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
-      {% include icons/download.svg width="32" height="32" class="text-primary mb-2" %}
-      <h3>BootstrapCDN</h3>
-      <p>When you only need to include Bootstrap’s compiled CSS or JS, you can use <a href="https://www.bootstrapcdn.com/">BootstrapCDN</a>.</p>
-
-  <h5>CSS only</h5>
-  {% highlight html %}
-  <link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
-  {% endhighlight %}
-
-  <h5>JS, Popper.js, and jQuery</h5>
-  {% highlight html %}
-  <script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
-  <script src="{{ site.cdn.popper }}" integrity="{{ site.cdn.popper_hash }}" crossorigin="anonymous"></script>
-  <script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
-  {% endhighlight %}
-      <hr class="half-rule">
-      <a class="btn btn-outline-primary" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/layout/overview/">Explore the docs</a>
-    </div>
-
-    <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
-      <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
-      {% include icons/lightning.svg width="32" height="32" class="text-primary mb-2" %}
-      <h3>Official Themes</h3>
-      <p>
-        Take Bootstrap 4 to the next level with official premium themes—toolkits built on Bootstrap with new components and plugins, docs, and build tools.
-      </p>
-      <img class="img-fluid mt-3 mx-auto" srcset="{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/img/bootstrap-themes.png,
-                                                  {{ site.baseurl }}/docs/{{ site.docs_version }}/assets/img/bootstrap-themes@2x.png 2x"
-                                          src="{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/img/bootstrap-themes.png" alt="Bootstrap Themes" width="500" height="200">
-      <hr class="half-rule">
-      <a href="{{ site.themes }}/" class="btn btn-outline-primary">Browse themes</a>
-    </div>
   </div>
 
 </body>
+
 </html>
